@@ -3,7 +3,7 @@ function replace(oldText, newText) {
     .call(document.querySelectorAll(".ctable td"))
     .forEach((td) => {
       const text = td.innerText;
-      const newTxt = text.replace(oldText, newText).replace("jjshouse", "");
+      const newTxt = text.replace(oldText, newText).replace("jjshouse", "").replace("jjhouse", "");
       td.innerText = newTxt;
     });
 }
